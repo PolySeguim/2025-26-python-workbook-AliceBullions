@@ -33,4 +33,8 @@ print(message)
 
 #test inputs to print and see how they print 
 print(42000)
+#every time you have a comma between values, it will understand it as a different 
+#parameter input 
+print(42, "poly", 3, "chem", "computer")
+print(42000)
 print(42,000)
