@@ -6,9 +6,31 @@ def whatType(userInput):
     # print is a Python built-in fuction that prints to the console 
     # type is a Python-built in function that finds the data type 
     # userInput is the variable that the user enters 
+    print(type(userInput))
 # the pound symbol is for one line comments
 # the program ignores all comments 
 """
 multiple line comments 
 """
 #Call the function with different inputs 
+#If you dont call the functions, nothing will run in the program 
+
+"""
+Test SUITE
+"""
+whatType(3)
+whatType(3.0)
+whatType("3.0")
+whatType(True)
+whatType("Alice")
+whatType('p')
+
+#create a variable named message 
+message = """this is a 
+multiline message 
+to my bestie."""
+print(message)
+
+#test inputs to print and see how they print 
+print(42000)
+print(42,000)
