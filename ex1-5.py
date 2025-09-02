@@ -6,7 +6,21 @@ address formatted in the manner that you would usually see it
 on the outside of an envelope.  Your program does not need to 
 read any input from the user.  (9 lines)
 """
-
+def mailingAddress():
+    #create variables for all the information 
+    name = input("What is your name? ")
+    #address
+    #city
+    #state
+    #zip
+    address = input("What is your address?")
+    city = input("What is your city?")
+    state = input("What is your state?")
+    Zip = input("What is your zip?")
+    print(name)
+    print(address)
+    print(city, state zip)
+    
 """
 Exercise 2:  Hello
 Write a program that asks the user to enter his or her name.  
@@ -47,10 +61,7 @@ those containers.  Format the output so that it includes a dollar
 sign and always displays exactly two decimal places.  (15 lines)
 """
 
-
-def print_hi(name):
-    print(f"Hi, {name}")
-
+mailingAddress()
 
 if __name__ == "__main__":
     print_hi("Netbeans")
