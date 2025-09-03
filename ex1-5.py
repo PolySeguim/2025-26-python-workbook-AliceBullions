@@ -6,24 +6,50 @@ address formatted in the manner that you would usually see it
 on the outside of an envelope.  Your program does not need to 
 read any input from the user.  (9 lines)
 """
-
+def mailingAddress():
+    #create variables for all the information 
+    name = input("What is your name? ")
+    #address
+    #city
+    #state
+    #zip
+    address = input("What is your address?")
+    city = input("What is your city?")
+    state = input("What is your state?")
+    zip = input("What is your zip?")
+    print(name)
+    print(address)
+    print(city,",", state, zip)
 """
 Exercise 2:  Hello
 Write a program that asks the user to enter his or her name.  
 The program should respond with a message that says hello to 
 the user, using his or her name.  (9 lines)
 """
+def HelloName():
+    name = input("What is your name?")
+    print("hello", name)
 
 """
 Exercise 3:  Area of a Room
 Write a program that asks the user to enter the width and 
-length or a room.  Once the values have been read, your 
+length or a room. Once the values have been read, your 
 program should compute and display the area of the room.  
 The length and the width will be entered as floating point 
 numbers.  Include units in your prompt and output message;  
 either feet or meters, depending on which unit you are more 
 comfortable working with.  (13 lines)
 """
+"""
+def AreaRoom():
+    print("area of room")
+    units = input("what units are you using? feet or meter:")
+    width = float(input("width:"))
+    length = float(input("length:"))
+    AreaOfRoom = width*length
+    print(AreaOfRoom, units)
+"""
+
 
 """
 Exercise 4:  Area of a Field
@@ -31,6 +57,16 @@ Create a program that reads the length and width of a
 farmer’s field from the user in feet.  Display the 
 area of the field in acres.  
 Hint: There are 43,560 square feet in an acre
+"""
+"""
+def FarmersField():
+    print("area of a farmer's field")
+    width = float(input("width:"))
+    length = float(input("length:"))
+    AreaOfField = width*length/43560
+    print("the are of the farmers field is", AreaOfField, "acres")
+
+FarmersField();    
 """
 
 """
@@ -47,10 +83,18 @@ those containers.  Format the output so that it includes a dollar
 sign and always displays exactly two decimal places.  (15 lines)
 """
 
+def Refund():
+    TenCentDeposits = float(input("how many bottles are less than or equal to 1 liter?"))
+    TwentyFiveCentDeposits = float(input("how many bottles are more than 1 liter?"))
+    OneLiterOrLessBottles = float(TenCentDeposits*0.10)
+    MoreThanOneLiterBottles = float(TwentyFiveCentDeposits*0.25)
+    RefundPrice = OneLiterOrLessBottles+MoreThanOneLiterBottles
+    print("$",RefundPrice)
+Refund();
 
-def print_hi(name):
-    print(f"Hi, {name}")
 
 
-if __name__ == "__main__":
-    print_hi("Netbeans")
+
+
+
+
