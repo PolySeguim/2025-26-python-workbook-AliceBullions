@@ -15,6 +15,7 @@ multiple line comments
 #Call the function with different inputs 
 #If you dont call the functions, nothing will run in the program 
 
+
 """
 Test SUITE
 """
@@ -39,10 +40,12 @@ print(42, "poly", 3, "chem", "computer")
 print(42000)
 print(42,000)
 
+
 name = "polyana"
 newName = "poly"
 name = newName
 newName = name 
+
 
 print(name)
 print(newName)
@@ -119,6 +122,7 @@ print(int(-4.11212132))
 print(int(-4.9999))
 #print(int("Alice")) will not work "alice" is not a number 
     
+
 print(float(1977))
 print(float(3.1415))
 

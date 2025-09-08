@@ -40,6 +40,7 @@ numbers.  Include units in your prompt and output message;
 either feet or meters, depending on which unit you are more 
 comfortable working with.  (13 lines)
 """
+
 """
 def AreaRoom():
     print("area of room")
@@ -49,7 +50,6 @@ def AreaRoom():
     AreaOfRoom = width*length
     print(AreaOfRoom, units)
 """
-
 
 """
 Exercise 4:  Area of a Field
@@ -83,6 +83,7 @@ those containers.  Format the output so that it includes a dollar
 sign and always displays exactly two decimal places.  (15 lines)
 """
 
+
 def Refund():
     TenCentDeposits = int(input("how many bottles are less than or equal to 1 liter?"))
     TwentyFiveCentDeposits = int(input("how many bottles are more than 1 liter?"))
@@ -99,3 +100,6 @@ Refund()
 
 
 
+    # To ensure we have two decimal places
+    # number_two_decimal = "{:.2f}".format(number_string)
+    # print(number_two_decimal)
