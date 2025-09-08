@@ -84,13 +84,14 @@ sign and always displays exactly two decimal places.  (15 lines)
 """
 
 def Refund():
-    TenCentDeposits = float(input("how many bottles are less than or equal to 1 liter?"))
-    TwentyFiveCentDeposits = float(input("how many bottles are more than 1 liter?"))
+    TenCentDeposits = int(input("how many bottles are less than or equal to 1 liter?"))
+    TwentyFiveCentDeposits = int(input("how many bottles are more than 1 liter?"))
     OneLiterOrLessBottles = float(TenCentDeposits*0.10)
     MoreThanOneLiterBottles = float(TwentyFiveCentDeposits*0.25)
     RefundPrice = OneLiterOrLessBottles+MoreThanOneLiterBottles
-    print("$",RefundPrice)
-Refund();
+    RefundPrice = round(RefundPrice, 2)
+    print("your refund will be","$","{:.2f}" .format(RefundPrice))
+Refund()
 
 
 
