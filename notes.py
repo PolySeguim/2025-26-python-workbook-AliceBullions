@@ -6,6 +6,7 @@ def whatType(userInput):
     # print is a Python built-in fuction that prints to the console 
     # type is a Python-built in function that finds the data type 
     # userInput is the variable that the user enters 
+    print(type(userInput))
 # the pound symbol is for one line comments
 # the program ignores all comments 
 """
